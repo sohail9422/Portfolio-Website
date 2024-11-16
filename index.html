@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+  <title>Sohail Khan's Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth; /* Enables smooth scrolling */
+    }
+    #fixed{
+      position: fixed;
+      right: 0;
+      bottom: 0;
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</head>
+
+<body class="bg-[#021526] text-white font-mono">
+  <header class="bg-slate-800 shadow">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Sohail.Portfolio</h1>
+      <button class="md:hidden" onclick="toggleMenu()" aria-label="Toggle Menu">
+        <div class="flex flex-col justify-center items-center space-y-1">
+          <div class="w-6 h-0.5 bg-white transition-all duration-300"></div>
+          <div class="w-6 h-0.5 bg-white transition-all duration-300"></div>
+          <div class="w-6 h-0.5 bg-white transition-all duration-300"></div>
+        </div>
+      </button>
+      <nav id="navbar" class="hidden md:block">
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:text-blue-300">About</a></li>
+          <li><a href="#skills" class="hover:text-blue-300">Skills</a></li>
+          <li><a href="#experience" class="hover:text-blue-300">Experience</a></li>
+          <li><a href="#projects" class="hover:text-blue-300">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-300">Contact Us</a></li>
+          
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <a href="./src/Resume.pdf" id="fixed" class="bg-emerald-500 text-white px-4 py-2 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl" download>
+    Download CV</a>
+    
+    
+  <div class="md:hidden">
+    <nav id="mobile-menu" class="hidden bg-slate-800 p-4">
+      <ul class="flex flex-col space-y-2">
+        <li><a href="#about" class="block hover:text-blue-300">About</a></li>
+        <li><a href="#skills" class="block hover:text-blue-300">Skills</a></li>
+        <li><a href="#experience" class="block hover:text-blue-300">Experience</a></li>
+        <li><a href="#projects" class="block hover:text-blue-300">Projects</a></li>
+        <li><a href="#contact" class="block hover:text-blue-300">Contact Us</a></li>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <main class="bg-[#021526] max-w-6xl mx-auto px-4 py-10 text-white">
+    <section id="about" class="mb-10">
+      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+      <p>I'm a Frontend Developer with a focus on creating engaging landing pages and strong ecommerce sites. I'm skilled in Adobe Experience Manager (AEM) and proficient in frontend technologies.</p>
+      <img src="./src/sohail.jpeg" class="mt-8 p-5 w-64 h-64 rounded-full mx-auto shadow" alt="Sohail">
+    </section>
+
+    <section id="skills" class="mb-10">
+      <h2 class="text-3xl font-semibold mb-4">Skills</h2>
+      <p class="mx-auto">
+        <a href="https://skillicons.dev">
+          <img src="https://skillicons.dev/icons?i=html,css,js,bootstrap,tailwind,react,mongodb,git,wordpress,mysql,php,vscode" />
+        </a>
+      </p>
+    </section>
+
+    <section id="experience" class="mb-10">
+      <h2 class="text-3xl font-semibold mb-4">Work Experience</h2>
+      <div class="mb-6">
+        <h3 class="font-bold">Senior Analyst (Frontend Developer)</h3>
+        <p><strong>eClerx Services Limited</strong> | 05/2021 - Present</p>
+        <p>Currently working as a Senior Analyst at eClerx Services Limited. Developed e-commerce website landing pages using HTML, CSS, JavaScript, Tailwind CSS, AEM, and React JS. Performed website QA and worked on AEM authoring support. Currently involved in the Norton LifeLock project.</p>
+      </div>
+      <div>
+        <h3 class="font-bold">Web Developer cum SEO Specialist</h3>
+        <p><strong>VK Control System</strong> | 08/2018 - 10/2020</p>
+        <p>Developed a complete website for V K Control System PVT LTD and worked on other projects using AEM CMS. Managed backend functionalities using PHP and developed a custom blog web application with Laravel.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="mb-10">
+      <h2 class="text-3xl font-semibold mb-4">Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white text-black p-4 rounded-lg shadow-lg">
+          <img src="/src/timberland-1.svg" alt="timberland" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="font-bold text-xl mb-2">Timberland</h3>
+          <p class="mb-4">Timberland LLC is an American manufacturer and retailer of outdoor footwear and apparel owned by VF Corporation. The company also sells accessories including watches, eyewear, and leather goods.</p>
+          <a href="https://www.timberland.com/en-us" target="_blank" class="bg-lime-500 text-white px-4 py-2 rounded-lg">View Project</a>
+        </div>
+        <div class="bg-white text-black p-4 rounded-lg shadow-lg">
+          <img src="/src/norton.jpg" alt="norton lifelock" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="font-bold text-xl mb-2">Norton LifeLock</h3>
+          <p class="mb-4">NortonLifeLock offers comprehensive protection solutions for your Cyber Safety, helping to protect you and your family's Device Security.</p>
+          <a href="https://lifelock.norton.com/" target="_blank" class="bg-lime-500 text-white px-4 py-2 rounded-lg">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="mb-10">
+        <h2 class="text-3xl font-semibold mb-4">Contact Us</h2>
+        <form id="contact-form" class="bg-[#021526] text-white p-6 rounded-lg shadow-lg border border-gray-600" action="https://formsubmit.co/khan.sohail204@gmail.com" method="POST" />
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-medium mb-2">Name <span class="text-red-500">*</span></label>
+            <input type="text" id="name" name="name" required class="bg-transparent border-b border-gray-400 p-2 rounded-none w-full focus:outline-none focus:border-blue-300" placeholder="Your Name">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium mb-2">Email <span class="text-red-500">*</span></label>
+            <input type="email" id="email" name="email" required class="bg-transparent border-b border-gray-400 p-2 rounded-none w-full focus:outline-none focus:border-blue-300" placeholder="Your Email">
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-medium mb-2">Message <span class="text-red-500">*</span></label>
+            <textarea id="message" name="message" required class="bg-transparent border-b border-gray-400 p-2 rounded-none w-full focus:outline-none focus:border-blue-300" rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="bg-emerald-500 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-emerald-600">Send</button>
+        </form>
+      </section>
+      <footer class="bg-slate-800 text-white py-4 mt-10">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+          <p class="text-sm">© 2024 Sohail Khan. All Rights Reserved.</p>
+          <div class="flex space-x-4">
+            <a href="https://www.linkedin.com/in/sohail-khan-72705a141/" target="_blank" class="hover:text-blue-300">
+              <i class='bx bxl-linkedin' style='font-size: 24px'></i>
+            </a>
+            <a href="https://github.com/sohail9422" target="_blank" class="hover:text-blue-300">
+              <i class='bx bxl-github' style='font-size: 24px'></i>
+            </a>
+          </div>
+        </div>
+        
+      </footer>
+      
