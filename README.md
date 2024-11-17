@@ -1,1 +1,1 @@
-Tailwind CSS POrtfolio.
+Tailwind CSS Portfolio.
